@@ -2,7 +2,7 @@
 	"rootDir": "../../",
 	"preset": "jest-puppeteer",
 	"testMatch": [
-		"<rootDir>/test/e2e/**/(*.)test.js"
+		"<rootDir>/tests/e2e/**/(*.)test.js"
 	],
 	"transform": {
 		"^.+\\.jsx?$": "<rootDir>/node_modules/babel-jest"
