@@ -76,6 +76,10 @@ before_script:
   - theme_dir=$(pwd)
   - echo $theme_slug
   - echo $theme_dir
+  - |
+    if [[ ! -z "$WP_VERSION" ]] ; then
+        bash bin/install-wp-tests.sh wordpress_test root '' localhost $WP_VERSION
+    fi
   # Install WPThemeReview stnadards, which will install PHP_CodeSniffer, WordPress Coding Standards, WPThemeReview and PHPCompatibility standards.
   - if [[ "$LINT" == "1" ]]; then composer install --no-suggest; fi
   # After CodeSniffer install you should refresh your path.
