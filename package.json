@@ -45,7 +45,7 @@
     "build:rtl": "rtlcss style.css style-rtl.css",
     "build:print": "node-sass print.scss print.css --output-style expanded && postcss -r print.css",
     "build": "run-p \"build:*\"",
-    "test-e2e": "JEST_PUPPETEER_CONFIG=test/e2e/puppeteer.config.js wp-scripts test-unit-js --config test/e2e/jest.config.json --runInBand --detectOpenHandles",
+    "test-e2e": "JEST_PUPPETEER_CONFIG=tests/e2e/puppeteer.config.js wp-scripts test-unit-js --config tests/e2e/jest.config.json --runInBand --detectOpenHandles",
     "watch": "chokidar \"**/*.scss\" -c \"npm run build\" --initial"
   }
 }
