@@ -44,6 +44,11 @@ env:
     - LINT=1
     - E2E=1
 
+# Ensure that the WordPress test suite's hostname resolves to localhost
+addons:
+  hosts:
+    - example.org
+
 # Declare versions of PHP to use. Use one decimal max.
 matrix:
   fast_finish: true
@@ -90,8 +95,8 @@ before_script:
   # @link http://jshint.com/docs/
   - if [[ "$LINT" == "1" ]]; then npm install -g jshint; fi
   - if [[ "$LINT" == "1" ]]; then wget https://develop.svn.wordpress.org/trunk/.jshintrc; fi
-  - if [[ "$E2E" == "1" ]]; then npm ci; fi
-
+  # Install NPM dependencies
+  - if [[ "$E2E" == "1" ]]; then npm install; fi
 
 # Run test script commands.
 # Default is specific to project language.
