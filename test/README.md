@@ -29,10 +29,10 @@ $ WP_BASE_URL=https://custom.test npm run test:axe
 
 ## Contributors
 
-[@aduth](https://github.com/aduth)
-[@dylanb](https://github.com/dylanb)
-[@greatislander](https://github.com/greatislander)
-[@gziolo](https://github.com/gziolo)
-[@joemcgill](https://github.com/joemcgill)
-[@ryelle](https://github.com/ryelle)
-[@stephenmathieson](https://github.com/stephenmathieson)
+- [@aduth](https://github.com/aduth)
+- [@dylanb](https://github.com/dylanb)
+- [@greatislander](https://github.com/greatislander)
+- [@gziolo](https://github.com/gziolo)
+- [@joemcgill](https://github.com/joemcgill)
+- [@ryelle](https://github.com/ryelle)
+- [@stephenmathieson](https://github.com/stephenmathieson)
