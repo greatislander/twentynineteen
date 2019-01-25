@@ -21,7 +21,7 @@ _NOTE: Gutenberg must be installed from GitHub in order to access the dependenci
 $ npm run test:axe
 ```
 
-Tests will be run against http://one.wordpress.test by default. If you'd like to run your tests against a different WordPress install, you can use the `WP_BASE_URL` environment variable:
+Tests will be run against [http://one.wordpress.test](https://varyingvagrantvagrants.org/docs/en-US/references/default-sites/) by default. If you'd like to run your tests against a different WordPress install, you can use the `WP_BASE_URL` environment variable:
 
 ```
 $ WP_BASE_URL=https://custom.test npm run test:axe
