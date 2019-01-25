@@ -8,6 +8,12 @@
   "homepage": "https://github.com/WordPress/twentynineteen#readme",
   "devDependencies": {
     "@wordpress/browserslist-config": "^2.2.2",
+    "@wordpress/e2e-test-utils": "file:../../plugins/gutenberg/packages/e2e-test-utils",
+    "@wordpress/e2e-tests": "file:../../plugins/gutenberg/packages/e2e-tests",
+    "@wordpress/jest-console": "file:../../plugins/gutenberg/packages/jest-console",
+    "@wordpress/jest-preset-default": "file:../../plugins/gutenberg/packages/jest-preset-default",
+    "@wordpress/jest-puppeteer-axe": "file:../../plugins/gutenberg/packages/jest-puppeteer-axe",
+    "@wordpress/scripts": "file:../../plugins/gutenberg/packages/scripts",
     "autoprefixer": "^9.1.5",
     "chokidar-cli": "^1.2.1",
     "node-sass": "^4.9.3",
@@ -39,6 +45,7 @@
     "build:rtl": "rtlcss style.css style-rtl.css",
     "build:print": "node-sass print.scss print.css --output-style expanded && postcss -r print.css",
     "build": "run-p \"build:*\"",
+    "test:axe": "node_modules/@wordpress/scripts/bin/wp-scripts.js test-e2e --config jest.config.js",
     "watch": "chokidar \"**/*.scss\" -c \"npm run build\" --initial"
   }
 }
