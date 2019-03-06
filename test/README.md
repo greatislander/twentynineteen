@@ -12,7 +12,7 @@ _NOTE: Gutenberg must be installed from GitHub in order to access the dependenci
 
 ## Setup
 
-1. Run `yarn` to install the `@wordpress/scripts` package and other related dependencies (`npm install` isn't working for this, see [Slack discussion](https://wordpress.slack.com/archives/CEKKABGJD/p1548424062027300)).
+1. Run `npm install` to install the `@wordpress/scripts` package and other related dependencies.
 2. Add more test cases. `/test/post.test.js` is included as an example. See `jest.config.js` for valid naming patterns and locations for test cases.
 
 ## Running
