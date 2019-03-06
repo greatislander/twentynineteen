@@ -8,7 +8,9 @@ const path = require( 'path' );
  */
 const jestE2EConfig = {
 	preset: 'jest-puppeteer',
-	setupTestFrameworkScriptFile: './node_modules/@wordpress/jest-puppeteer-axe/build/index.js',
+	setupFilesAfterEnv: [
+		'@wordpress/jest-puppeteer-axe'
+	],
 	testMatch: [
 		'**/__tests__/**/*.js',
 		'**/?(*.)(spec|test).js',
