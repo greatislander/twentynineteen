@@ -23,7 +23,6 @@
     "@wordpress/jest-puppeteer-axe": "^1.0.0",
     "@wordpress/scripts": "^3.0.0",
     "autoprefixer": "^9.1.5",
-    "babel-jest": "^24.1.0",
     "chokidar-cli": "^1.2.1",
     "core-js": "^2.6.5",
     "node-sass": "^4.9.3",
