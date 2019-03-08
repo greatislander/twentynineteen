@@ -7,24 +7,10 @@
   },
   "homepage": "https://github.com/WordPress/twentynineteen#readme",
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-proposal-async-generator-functions": "^7.2.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
-    "@babel/plugin-transform-react-jsx": "^7.3.0",
-    "@babel/plugin-transform-runtime": "^7.2.0",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/runtime": "^7.3.1",
-    "@wordpress/babel-plugin-import-jsx-pragma": "^2.0.0",
+    "@greatislander/wp-theme-auditor": "github:greatislander/wp-theme-auditor#master",
     "@wordpress/browserslist-config": "^2.2.2",
-    "@wordpress/e2e-test-utils": "^1.0.0",
-    "@wordpress/e2e-tests": "^1.0.0",
-    "@wordpress/jest-console": "^3.0.0",
-    "@wordpress/jest-preset-default": "^4.0.0",
-    "@wordpress/jest-puppeteer-axe": "^1.0.0",
-    "@wordpress/scripts": "^3.0.0",
     "autoprefixer": "^9.1.5",
     "chokidar-cli": "^1.2.1",
-    "core-js": "^2.6.5",
     "node-sass": "^4.9.3",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^6.0.1",
@@ -54,7 +40,7 @@
     "build:rtl": "rtlcss style.css style-rtl.css",
     "build:print": "node-sass print.scss print.css --output-style expanded && postcss -r print.css",
     "build": "run-p \"build:*\"",
-    "test:axe": "node_modules/@wordpress/scripts/bin/wp-scripts.js test-e2e --config jest.config.js",
-    "watch": "chokidar \"**/*.scss\" -c \"npm run build\" --initial"
+    "watch": "chokidar \"**/*.scss\" -c \"npm run build\" --initial",
+    "test:axe": "wp-scripts test-e2e"
   }
 }
